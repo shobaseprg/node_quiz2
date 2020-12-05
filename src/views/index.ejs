@@ -1,11 +1,30 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>クイズ問題</title>
+  <style>
+    .line {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="information">ようこそ</h1>
+  <h3 id="genre_display"></h3>
+  <h3 id="difficult_display"></h3>
+  <hr class="line">
+  <p id="quiz_display">以下のボタンをクリック</p>
+  <hr class="line">
+  <button type="button" id="start_btn">
+    開始
+  </button>
+  <div id="answer_btns">
+  </div>
+  <script type="text/javascript" src="/javascripts/quizController.js">
+  </script>
+</body>
+
 </html>

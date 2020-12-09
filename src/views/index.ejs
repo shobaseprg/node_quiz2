@@ -8,6 +8,10 @@
     .line {
       width: 100%;
     }
+
+    .none {
+      display: none;
+    }
   </style>
 </head>
 
@@ -21,13 +25,18 @@
   <button type='button' id='start_btn'>
     開始
   </button>
-  <div id='answer_btns'>
-  </div>
-  <script type='text/javascript' src='/javascripts/module/pushBtn.js'></script>
+  <div id='answer_btns'></div>
+  <form id="form" class="none" action="/users/register" method="post">
+    <input type="text" name="name">
+    <p id="pointDisplay"></p>
+    <input id="pointForm" type="hidden" name="point" value="">
+    <input type="submit" value="登録">
+  </form>
+  <script type='text/javascript' src='/javascripts/module/pushBtn.js'>
+  </script>
   <script type='text/javascript' src='/javascripts/module/getQuiz.js'></script>
   <script type='text/javascript' src='/javascripts/module/makeQuiz.js'></script>
   <script type='text/javascript' src='/javascripts/quizController.js'></script>
-
 </body>
 
 </html>

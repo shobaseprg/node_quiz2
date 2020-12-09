@@ -10,6 +10,7 @@ const genreDisplay = document.getElementById('genre_display');
 const difficultDisplay = document.getElementById('difficult_display');
 const quizDisplay = document.getElementById('quiz_display');
 const answerBtns = document.getElementById('answer_btns');
+const pointsDisplay = document.getElementById('pointDisplay');
 // ===================================
 // 再開する関数
 // ===================================

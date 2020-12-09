@@ -9,11 +9,11 @@ const getQuiz = () => { // 開始を押した場合
     .then((response) => {
       return response.json();
     })
-    .catch(err => alert(err))/* 例外処理 */
     .then((json) => {
       quizArray = json.results;
       oneQuiz = quizArray[0];  /* 第一問取得 */
       const quiz = new QuizDisplay(oneQuiz);  /* クイズ表示クラスインスタンス作成 */
       quiz.presentQuiz();  /* 表示メソッド呼び出し */
-    });
+    })
+    .catch(err => console.log(err))/* 例外処理 */;
 }

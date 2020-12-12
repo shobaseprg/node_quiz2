@@ -17,6 +17,13 @@ class QuizDisplay {
     answerBtns.appendChild(button);
     button.id = 'restart';
     button.textContent = 'ホームに戻る';
+    pointsDisplay.innerText = correctCount + '点';
+    const form = document.getElementById("form");
+    form.classList.remove("none");
+    const pointForm = document.getElementById("pointForm");
+    pointForm.value = correctCount;
+    console.log("ok");
+
   };
   // ===================================
   // クイズを表示する関数
